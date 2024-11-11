@@ -16,8 +16,10 @@ btn.addEventListener('click', () => {
         month: currentDate.getMonth() + 1,
         year: currentDate.getFullYear()
     }
-    if (dob.value = '') {
+    console.log(dob.value == undefined)
+    if (dob.value == undefined) {
         alert('Enter Your DOB')
+        return
     }
     yearDiff = currentDateDetails.year - barthDetails.year
 
@@ -40,6 +42,5 @@ btn.addEventListener('click', () => {
         yearDiff--
         monDiff = 11
     }
-    console.log(yearDiff, monDiff, dayDiff)
     result.innerHTML = `Your age is <span>${yearDiff}</span> Year , <span>${monDiff}</span> months and <span>${dayDiff}</span> days`
 })
