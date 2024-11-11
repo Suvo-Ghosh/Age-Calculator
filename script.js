@@ -15,8 +15,7 @@ btn.addEventListener('click', () => {
         date: currentDate.getDate(),
         month: currentDate.getMonth() + 1,
         year: currentDate.getFullYear()
-    }
-    console.log(dob.value == undefined)
+    } 
     if (dob.value == undefined) {
         alert('Enter Your DOB')
         return
