@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-image: linear-gradient(135deg,rgb(23, 23, 145),rgb(196, 26, 196));
+}
+.container{
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    margin-inline: auto;
+    margin-block: 9rem;
+}
+.container h1{
+    color: white;
+    border-left: 0.25rem solid greenyellow;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+.container h1 span{
+    color: rgba(245, 242, 54, 0.927);
+} 
+.input-btn{
+    background-color: rgb(240, 255, 255,0.5);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.input-btn input,
+.input-btn button {
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    font-size: large;
+    font-weight: 550;
+}
+.input-btn input{ 
+    flex-grow: 1;
+}
+.input-btn button{
+    background-color: rgb(164, 221, 21);
+
+    &:active{
+        transform: scale(1.02);
+    }
+}
+.container p{  
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left:5px ;
+}
+p span{
+    color: white;
+}
